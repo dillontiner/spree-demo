@@ -1,0 +1,15 @@
+current directory: /tmp/build_4def717b/vendor/bundle/ruby/2.7.0/gems/scout_apm-4.0.4/ext/rusage
+/tmp/build_4def717b/vendor/ruby-2.7.2/bin/ruby -I /tmp/build_4def717b/vendor/ruby-2.7.2/lib/ruby/2.7.0 -r ./siteconf20210328-241-14zv4b5.rb extconf.rb
+creating Makefile
+
+current directory: /tmp/build_4def717b/vendor/bundle/ruby/2.7.0/gems/scout_apm-4.0.4/ext/rusage
+make "DESTDIR=" clean
+
+current directory: /tmp/build_4def717b/vendor/bundle/ruby/2.7.0/gems/scout_apm-4.0.4/ext/rusage
+make "DESTDIR="
+compiling rusage.c
+linking shared-object rusage.so
+
+current directory: /tmp/build_4def717b/vendor/bundle/ruby/2.7.0/gems/scout_apm-4.0.4/ext/rusage
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 rusage.so ./.gem.20210328-241-1sjdwnm
