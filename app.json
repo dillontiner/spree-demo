@@ -23,7 +23,7 @@
   "formation": {
   },
   "scripts": {
-    "postdeploy": "bundle exec rails db:seed && SKIP_SAMPLE_IMAGES=true bundle exec rake spree_sample:load"
+    "postdeploy": "bundle exec rails db:seed"
   },
   "addons": [
     "memcachedcloud",
