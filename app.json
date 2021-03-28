@@ -18,12 +18,16 @@
     "ADMIN_PASSWORD": {
       "description": "We will create an admin user with this password.",
       "value": "spree123"
+    },
+    "LOAD_SAMPLE_DATA": {
+      "description": "We will populate the store with sample data by default or can leave it empty to let you jump in as admin.",
+      "value": true
     }
   },
   "formation": {
   },
   "scripts": {
-    "postdeploy": "bundle exec rails db:seed"
+    "postdeploy": "bundle exec rails db:seed && if [ $LOAD_SAMPLE_DATA ]; then SKIP_SAMPLE_IMAGES=true bundle exec rake spree_sample:load; fi"
   },
   "addons": [
     "memcachedcloud",
