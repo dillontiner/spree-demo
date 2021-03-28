@@ -21,13 +21,13 @@
     },
     "LOAD_SAMPLE_DATA": {
       "description": "We will populate the store with sample data by default. To omit the sample data, change this field to any other value.",
-      "value": 1
+      "value": "yes"
     }
   },
   "formation": {
   },
   "scripts": {
-    "postdeploy": "bundle exec rails db:seed && if [ $LOAD_SAMPLE_DATA == 1 ]; then SKIP_SAMPLE_IMAGES=true bundle exec rake spree_sample:load; fi"
+    "postdeploy": "bundle exec rails db:seed && if [ $LOAD_SAMPLE_DATA == yes ]; then SKIP_SAMPLE_IMAGES=true bundle exec rake spree_sample:load; fi"
   },
   "addons": [
     "memcachedcloud",
